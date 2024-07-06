@@ -1,0 +1,6 @@
+# Ignore README.md file
+README.md
+# Ignore Dockerfile
+Dockerfile
+# Ignore .dockerignore file
+.dockerignore
