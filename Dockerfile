@@ -1,6 +1,9 @@
 # Declaring Node v13 base image with Linux alpine OS
 FROM node:13-alpine
 
+# Set env variable from the quest
+ENV SECRET_WORD=TwelveFactor
+
 # Set current working directory
 WORKDIR /app
 

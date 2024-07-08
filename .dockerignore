@@ -1,6 +1,8 @@
-# Ignore README.md file
-README.md
-# Ignore Dockerfile
-Dockerfile
-# Ignore .dockerignore file
-.dockerignore
+# Ignore everything when building
+# Ignore everything
+*
+
+# Allow files and directories
+!/bin
+!/src
+!package.json
