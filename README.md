@@ -159,10 +159,10 @@ How you can test/review this project
 Discuss any shortcomings/immaturities in your solution and the reasons behind them (lack of time is a perfectly fine reason!)
 
 Given more time, I would improve:
-    - The Docker image build process to use a more streamlined image build management service, such as Google Cloud Build for automated push to an image registry service (i.e. Dockerhub for cloud agnostic access, Artifact Registry in the case of GCP). 
-    - The Google Kubernetes Engine configuration to use more managed auto-scaling features (autopilot) for scaling to application compute needs.
-    - I would consider more of the differences between Ingress to ClusterIP services, vs Ingress to NodePort services, vs LoadBalancer to either of those backend services instead of relying on the Ingress --> NodePort structure I have, which I did for easier understanding as NodePort explicitly exposes the ports of all nodes and helped me understand the networking component easier. There may be a more efficient way to handle the load balancing configuration if I had more time to learn.
-    - I would implement an official TLS signed certificate for secure handling. 
-    - I would improve the structure and organization of the Terraform code - separate the Google infrastructure pieces (GKE, Artifact Registry) from the Kubernetes resource deployment piece for easier readability, and easier management of each separate resource.
-    - I would add more documentation/comments in the code to clearly explain the purpose of each deployment and resources.
-    - I would also try to deploy this on other clouds as well to compare the services and pros and cons of each service.
+- The Docker image build process to use a more streamlined image build management service, such as Google Cloud Build for automated push to an image registry service (i.e. Dockerhub for cloud agnostic access, Artifact Registry in the case of GCP). 
+- The Google Kubernetes Engine configuration to use more managed auto-scaling features (autopilot) for scaling to application compute needs.
+- I would consider more of the differences between Ingress to ClusterIP services, vs Ingress to NodePort services, vs LoadBalancer to either of those backend services instead of relying on the Ingress --> NodePort structure I have, which I did for easier understanding as NodePort explicitly exposes the ports of all nodes and helped me understand the networking component easier. There may be a more efficient way to handle the load balancing configuration if I had more time to learn.
+- I would implement an official TLS signed certificate for secure handling. 
+- I would improve the structure and organization of the Terraform code - separate the Google infrastructure pieces (GKE, Artifact Registry) from the Kubernetes resource deployment piece for easier readability, and easier management of each separate resource.
+- I would add more documentation/comments in the code to clearly explain the purpose of each deployment and resources.
+- I would also try to deploy this on other clouds as well to compare the services and pros and cons of each service.
