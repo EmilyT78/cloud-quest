@@ -1,0 +1,8 @@
+# Ignore everything when building
+# Ignore everything
+*
+
+# Allow files and directories
+!/bin
+!/src
+!package.json
